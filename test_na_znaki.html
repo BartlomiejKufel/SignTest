@@ -1,0 +1,146 @@
+<html>
+<head>
+
+	<title>Test na Znaki</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div id="naglowek">
+		<div id="textNaglowek">
+			<h1>TEST ZNAKÓW<h1>
+				
+		</div>
+	</div>
+	
+	<div id="test">
+		<form id="form" name="form" onsubmit="print()" onreset="del()">
+			
+			<h2>z1</h2>
+			<img id="picture" src="znaki\C-XD.jpg"><br>
+			<input type="checkbox" name="checkbox" id="A1" >Przejście dla pieszych <!--poprawna -->
+			<input type="checkbox" name="checkbox" id="B1" >Droga z pierwszeństwem<br>
+			<input type="checkbox" name="checkbox" id="C1" >Droga bez przejazdu
+			<input type="checkbox" name="checkbox" id="D1" >Droga jednokierunkowa<br><br>
+		
+			<h2>z2</h2>
+			<img id="picture" src="znaki\znaki-ostrzegawcze.png"><br>
+			<input type="checkbox" name="checkbox" id="A2" >Zwierzęta gospodarskie      
+			<input type="checkbox" name="checkbox" id="B2" >Droga bez przejazdu<br>
+			<input type="checkbox" name="checkbox" id="C2" >Spadające odłamki skalne
+			<input type="checkbox" name="checkbox" id="D2" >Roboty na drodze<br><br><!--poprawna -->
+		
+			<h2>z3</h2>
+			<img id="picture" src="znaki\znaki-zakazu.png"><br>
+			<input type="checkbox" name="checkbox" id="A3" >Roboty na drodze
+			<input type="checkbox" name="checkbox" id="B3" >Stop<br><!--poprawna -->
+			<input type="checkbox" name="checkbox" id="C3" >Zakaz skręcania w prawo
+			<input type="checkbox" name="checkbox" id="D3" >Zakaz wjazdu samochodów ciężarowych<br><br>
+		
+			<h2>z4</h2>
+			<img id="picture" src="znaki\D-3.png"><br>
+			<input type="checkbox" name="checkbox" id="A4" >Droga jednokierunkowa<!--poprawna -->
+			<input type="checkbox" name="checkbox" id="B4" >Droga bez przejazdu<br>
+			<input type="checkbox" name="checkbox" id="C4" >Autostrada
+			<input type="checkbox" name="checkbox" id="D4" >Zakaz skręcania w prawo<br><br>
+		
+			<h2>z5</h2>
+			<img id="picture" src="znaki\B-6.png"><br>
+			<input type="checkbox" name="checkbox" id="A5" >Zakaz wjazdu rowerów
+			<input type="checkbox" name="checkbox" id="B5" >Droga z pierwszeństwem<br>
+			<input type="checkbox" name="checkbox" id="C5" >Zakaz wjazdu ciągników rolniczych<!--poprawna -->
+			<input type="checkbox" name="checkbox" id="D5" >Zakaz wjazdu motorowerów<br><br>
+		
+			<h2>z6</h2>
+			<img id="picture" src="znaki\B-41.png"><br>
+			<input type="checkbox" name="checkbox" id="A6" >Roboty na drodze
+			<input type="checkbox" name="checkbox" id="B6" >Zakaz ruchu pieszych<br><!--poprawna -->
+			<input type="checkbox" name="checkbox" id="C6" >Autostrada
+			<input type="checkbox" name="checkbox" id="D6" >Droga bez przejazdu<br><br>
+			
+			<h2>z7</h2>
+			<img id="picture" src="znaki\B-36.png"><br>
+			<input type="checkbox" name="checkbox" id="A7" >Zwierzęta gospodarskie
+			<input type="checkbox" name="checkbox" id="B7" >Zakaz skręcania w prawo<br>
+			<input type="checkbox" name="checkbox" id="C7" >Zakaz zatrzymywania się<!--poprawna -->
+			<input type="checkbox" name="checkbox" id="D7" >Droga jednokierunkowa<br><br>
+		
+			<h2>z8</h2>
+			<img id="picture" src="znaki\B-25.png"><br>
+			<input type="checkbox" name="checkbox" id="A8" >Zakaz wjazdu samochodów ciężarowych
+			<input type="checkbox" name="checkbox" id="B8" >Zakaz wyprzedzania<br><!--poprawna -->
+			<input type="checkbox" name="checkbox" id="C8" >Droga z pierwszeństwem
+			<input type="checkbox" name="checkbox" id="D8" >Zakaz ruchu pieszych<br><br>
+		
+			<h2>z9</h2>
+			<img id="picture" src="znaki\B-21.png"><br>
+			<input type="checkbox" name="checkbox" id="A9" >Roboty na drodze
+			<input type="checkbox" name="checkbox" id="B9" >Droga jednokierunkowa<br>
+			<input type="checkbox" name="checkbox" id="C9" >Zakaz skręcania w lewo<!--poprawna -->
+			<input type="checkbox" name="checkbox" id="D9" >Autostrada<br><br>
+		
+			<h2>z10</h2>
+			<img id="picture" src="znaki\B-2.png"><br>
+			<input type="checkbox" name="checkbox" id="A10" >Droga bez przejazdu
+			<input type="checkbox" name="checkbox" id="B10" >Zakaz wjazdu<br><!--poprawna -->
+			<input type="checkbox" name="checkbox" id="C10" >Kontrola drogowa
+			<input type="checkbox" name="checkbox" id="D10" >Zakaz skręcania w prawo<br><br><br><br>
+			
+			<center>
+			<input id="button" type="reset">
+			<input id="button" type="submit">
+			</center>
+		</form>
+	</div>>
+
+<script language="javascript">
+
+	confirm("Pamiętaj że na jedno pytanie możesz zaznaczyć tylko jedną odpowiedz.");
+	
+	function print()
+	{	
+		alert("Test został zakończony.");
+		var odp=0;
+		var A1 = document.getElementById("A1").checked;
+		var D2 = document.getElementById("D2").checked;
+		var B3 = document.getElementById("B3").checked;
+		var A4 = document.getElementById("A4").checked;
+		var C5 = document.getElementById("C5").checked;
+		var B6 = document.getElementById("B6").checked;
+		var C7 = document.getElementById("C7").checked;
+		var B8 = document.getElementById("B8").checked;
+		var C9 = document.getElementById("C9").checked;
+		var B10 = document.getElementById("B10").checked;
+		
+		if(A1==true)
+			odp=odp+1;
+		if(D2==true)
+			odp=odp+1;
+		if(B3==true)
+			odp=odp+1;
+		if(A4==true)
+			odp=odp+1;
+		if(C5==true)
+			odp=odp+1;
+		if(B6==true)
+			odp=odp+1;
+		if(C7==true)
+			odp=odp+1;
+		if(B8==true)
+			odp=odp+1;
+		if(C9==true)
+			odp=odp+1;
+		if(B10==true)
+			odp=odp+1;
+			
+		alert("Zdobyłeś "+odp+"/10 punktów.");
+	}
+	
+	function del() 
+	{
+		alert("Test został zresetowany.");
+	}
+	
+
+</script>
+</body>
+</html>
